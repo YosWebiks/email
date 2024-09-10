@@ -1,0 +1,137 @@
+*{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    gap: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+nav{
+    height: 100%;
+    width: 150px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+main{
+    height: 100%;
+    flex-grow: 1;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+nav > p {
+    margin-top: 7px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+nav > p:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    background: rgb(250,235,215);
+    background: linear-gradient(170deg, rgba(250,235,215,0) 35%, rgba(250,235,215,1) 100%); 
+  
+}
+
+section{
+    padding-top: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+section.inbox{
+    display: flex;
+}
+
+.new-email-btn{
+    background-color: antiquewhite;
+    border:none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.new-email-btn:hover{
+    background-color: rgb(170, 145, 113);
+}
+
+.open{
+    display: flex !important;
+}
+
+
+.new-email-modal{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 550px;
+    height: 320px;
+    border-radius: 10px 10px 0 0;
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding: 30px;
+}
+
+aside > *{
+    margin-bottom: 7px;
+    padding: 3px;
+}
+
+aside select {
+    width: 100%;
+    padding: 3px;
+}
+
+.href{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.email-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 35px;
+    border-bottom: 2px solid antiquewhite;
+}
+
+.settings select{
+    padding: 5px;
+    width: 300px;
+}
+
+.settings h1{
+   font-weight: 700;
+}
+.settings p {
+    margin-top: 30px;
+    margin-bottom: 3px;
+}
+
+.adrs-in-list {
+    color:gray;
+}

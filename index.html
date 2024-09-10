@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <p class="inbox-lnk">Inbox</p>
+        <p class="sent-lnk">Sent</p>
+        <p class="drafts-lnk">Drafts</p>
+        <p class="settings-lnk">Settings</p>
+    </nav>
+    <main>
+        <section class="inbox">
+            inbox
+        </section>
+        <section class="sent">
+            sent
+        </section>
+        <section class="drafts">
+            drafts
+        </section>
+        <section class="settings">
+            <h1>settings</h1>
+            <p>Select your cuurent address</p> 
+            <select class="current">
+                <option value="">Loading...</option>
+            </select>
+        </section>
+        <section class="no-address">
+            <div>
+                <h1>No Current Address Selected</h1>
+                <p>Go to <span class="href">settings page</span></p>
+            </div>
+        </section>
+        <button class="new-email-btn"> + </button>
+        <aside class="new-email-modal">
+            <p>Write a New Email</p>
+
+            <label>
+                <select class="from">
+                    <option value="">Loading...</option>
+                </select>
+            </label>
+            <label>
+                <select class="to">
+                    <option value="">Loading...</option>
+                </select>
+            </label>
+            <input type="text" class="title" placeholder="Title">
+            <textarea class="mail-body" placeholder="Write your email here"></textarea>
+            <button class="send-btn"> Send </button>
+        </aside>
+    </main>
+</body>
+
+</html>
