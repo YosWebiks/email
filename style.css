@@ -37,7 +37,7 @@ nav > p {
     transition: 0.5s;
 }
 
-nav > p:hover {
+nav > p:hover, .selected-page {
     text-decoration: underline;
     text-underline-offset: 2px;
     background: rgb(250,235,215);

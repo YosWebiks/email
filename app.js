@@ -269,8 +269,15 @@ const populatePage = page => {
 
 // attach listener to each link
 for (const lnk of links) {
-    lnk.addEventListener('click', e => navigateTo(e.target.className.replace('-lnk', '')))
+    lnk.addEventListener('click', e => {
+        navigateTo(e.target.className.replace('-lnk', ''))
+        for (const l of links) {
+            l.classList.remove('selected-page')
+        }
+        e.currentTarget.classList.add('selected-page')
+    })
 }
+inboxLnk.classList.add('selected-page')
 
 // new email
 const toggleNewEmailModal = e => {
